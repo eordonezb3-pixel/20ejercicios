@@ -1,16 +1,15 @@
 # Ejercicios de modelamiento
 
-Repositorio local creado a partir de la carpeta de trabajo del estudiante.
+El repositorio contiene 40 ejercicios de Python, organizados en dos colecciones
+de 20 ejercicios cada una:
 
-Contenido:
-- `ejer1.py`: Clase `Calificador` con validación, carga de notas y promedio.
+- `ejercicios/ejer01.py` a `ejercicios/ejer20.py`: ejercicios originales.
+- `ejercicios/ejercicios_alternativos/ejer01.py` a `ejer20.py`: 20 ejercicios
+	nuevos y alternativos, claramente separados de los originales.
 
-Instrucciones rápidas:
-
-1. Ejecutar el script:
+Para ejecutar un ejercicio:
 
 ```bash
-python "c:\Users\edwar\OneDrive\Escritorio\tarea modelamiento\ejer1.py"
+python ejercicios/ejer01.py
+python ejercicios/ejercicios_alternativos/ejer01.py
 ```
-
-2. Para vincular con GitHub crea un repositorio remoto y sigue los pasos abajo.
