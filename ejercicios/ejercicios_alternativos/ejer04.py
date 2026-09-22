@@ -1,9 +1,9 @@
-"""Clase HistorialReciente que:
+"""Clase InversorListas que:
 (1) tenga método invertir_lista(lista) que retorne la lista invertida sin usar reversed() (usa manual con bucles);
 (2) tenga método invertir_multiples(*listas) que reutilice el anterior para invertir
 varias listas y retorne una lista de pares (lista_original, lista_invertida)."""
 
-class HistorialReciente:
+class InversorListas:
 
     def invertir_lista(self, lista):
         invertida = []
@@ -22,7 +22,7 @@ class HistorialReciente:
 
         return resultado
 
-o = HistorialReciente()
+o = InversorListas()
 
 lista1 = [3, 7, 1, 9, 4, 2, 8, 6, 5]
 lista2 = [10, 20, 30, 40, 50]

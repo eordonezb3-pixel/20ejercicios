@@ -1,10 +1,10 @@
-"""Clase MonitorHumedad que:
+"""Clase MonitorTemperaturas que:
 Tenga un método validar_temperatura(temperatura) que retorne True si la temperatura está entre -20 y 50 grados, y False en caso contrario.
 Tenga un método cargar_temperaturas(*args) que reciba múltiples temperaturas, valide cada una, agregue únicamente las válidas a una lista interna y retorne esa lista.
 Tenga un método promedio() que retorne el promedio de las temperaturas almacenadas.
 Crear un objeto de la clase, ingresar varias temperaturas, mostrar las temperaturas válidas y calcular su promedio."""
 
-class MonitorHumedad:
+class MonitorTemperaturas:
 
     def validar_temperatura(self, temperatura):
         if -20 <= temperatura <= 50:
@@ -30,7 +30,7 @@ class MonitorHumedad:
         return sum(temperaturas) / len(temperaturas)
 
 
-c = MonitorHumedad()
+c = MonitorTemperaturas()
 
 temperaturas = c.cargar_temperaturas(22, 18, 55, 25, -30, 20)
 
