@@ -6,6 +6,8 @@ de 20 ejercicios cada una:
 - `ejercicios/ejer01.py` a `ejercicios/ejer20.py`: ejercicios originales.
 - `ejercicios/ejercicios_alternativos/ejer1.1.py` a `ejer20.1.py`: 20
 	ejercicios nuevos y alternativos, claramente separados de los originales.
+- `ejercicios/ejercicios_alternativos/todos_los_ejercicios.py`: version
+	unificada de los 20 ejercicios alternativos en un solo archivo.
 
 Los alternativos conservan las mismas estructuras y operaciones de práctica,
 pero presentan contextos distintos: monitoreo de humedad, equipos, peliculas,
@@ -18,4 +20,5 @@ Para ejecutar un ejercicio:
 ```bash
 python ejercicios/ejer01.py
 python ejercicios/ejercicios_alternativos/ejer1.1.py
+python ejercicios/ejercicios_alternativos/todos_los_ejercicios.py
 ```
