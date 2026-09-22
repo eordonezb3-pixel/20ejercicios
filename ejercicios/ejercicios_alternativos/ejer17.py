@@ -1,9 +1,9 @@
-"""Clase ClasificadorTemperaturas que:
+"""Clase ClasificadorRiesgo que:
 (1) tenga método clasificar_temperatura(temp) que retorne la categoría ("frío", "templado", "cálido", "muy caliente");
 (2) tenga método agrupar_por_categoria(*temperaturas) que retorne un diccionario con {categoría: [temperaturas]};
 (3) tenga método promedio_categoria(categoria, temperaturas)."""
 
-class ClasificadorTemperaturas:
+class ClasificadorRiesgo:
 
     def clasificar_temperatura(self, temp):
         if temp < 10:
@@ -30,7 +30,7 @@ class ClasificadorTemperaturas:
             return sum(temps_categoria) / len(temps_categoria)
         return None
 
-ct = ClasificadorTemperaturas()
+ct = ClasificadorRiesgo()
 print(f"Clasificación de 18 grados: {ct.clasificar_temperatura(18)}")
 ct.agrupar_por_categoria(5, 18, 25, 35)
 print(f"Agrupación por categoría: {ct.agrupar_por_categoria(5, 18, 25, 35)}")

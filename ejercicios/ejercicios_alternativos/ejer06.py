@@ -1,9 +1,9 @@
-"""Clase GestorPrecios que:
+"""Clase RegistroConsumos que:
 (1) tenga método registrar_precio(precio) que guarde en una lista;
 (2) tenga método minimo(), maximo(), promedio() que calculen estadísticas;
 (3) tenga método registrar_multiples(*precios) que reutilice el registro para varios precios."""
 
-class GestorPrecios:
+class RegistroConsumos:
 
     def __init__(self):
         self.precios = []
@@ -24,7 +24,7 @@ class GestorPrecios:
         for precio in precios:
             self.registrar_precio(precio)
 
-gp = GestorPrecios()
+gp = RegistroConsumos()
 gp.registrar_multiples(15.50, 22.00, 8.75, 30.10)
 print(gp.precios)
 print(gp.promedio())

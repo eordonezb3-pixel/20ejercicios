@@ -1,9 +1,9 @@
-"""Clase RegistroVentas que:
+"""Clase RegistroDonaciones que:
 (1) tenga método registrar(vendedor, monto) que guarde en un diccionario;
 (2) tenga método vendedores_destacados(monto_minimo) que retorne lista de vendedores;
 (3) tenga método mejor_vendedor() que retorne nombre y monto del que tiene mayor venta."""
 
-class RegistroVentas:
+class RegistroDonaciones:
 
     def __init__(self):
         self.ventas = {}
@@ -20,7 +20,7 @@ class RegistroVentas:
         mejor_vendedor = max(self.ventas, key=self.ventas.get)
         return mejor_vendedor, self.ventas[mejor_vendedor]
 
-rv = RegistroVentas()
+rv = RegistroDonaciones()
 rv.registrar("Sara", 4200)
 rv.registrar("Tomás", 1800)
 rv.mejor_vendedor()

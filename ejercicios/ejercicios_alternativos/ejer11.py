@@ -1,9 +1,9 @@
-"""Clase ContadorVisitas que:
+"""Clase AnalizadorLecturas que:
 (1) tenga método agregar_visita(pagina) que guarde en un diccionario contando repeticiones;
 (2) tenga método pagina_mas_visitada() que retorne la página con mayor frecuencia;
 (3) tenga método visitas_pagina(pagina) que retorne cuántas veces aparece."""
 
-class ContadorVisitas:
+class AnalizadorLecturas:
 
     def __init__(self):
         self.visitas = {}
@@ -22,7 +22,7 @@ class ContadorVisitas:
     def visitas_pagina(self, pagina):
         return self.visitas.get(pagina, 0)
 
-cv = ContadorVisitas()
+cv = AnalizadorLecturas()
 cv.agregar_visita("inicio")
 cv.agregar_visita("contacto")
 cv.agregar_visita("inicio")

@@ -1,14 +1,14 @@
-"""Clase CatalogoLibros que:
+"""Clase CatalogoPeliculas que:
 (1) tenga método agregar_libro(titulo, precio) que guarde en un diccionario {titulo: precio};
 (2) tenga método total_catalogo() que retorne la suma de todos los precios;
 (3) tenga método libros_por_rango(precio_min, precio_max) que retorne una lista con títulos dentro del rango.
 Ejemplo de entrada
-c = CatalogoLibros()
+c = CatalogoPeliculas()
 c.agregar_libro("Cien años de soledad", 12.50)
 c.agregar_libro("Rayuela", 15.00)
 c.total_catalogo()"""
 
-class CatalogoLibros:
+class CatalogoPeliculas:
 
     def __init__(self):
         self.libros = {}
@@ -23,7 +23,7 @@ class CatalogoLibros:
         return [titulo for titulo, precio in self.libros.items()
             if precio_min <= precio <= precio_max]
 
-c = CatalogoLibros()
+c = CatalogoPeliculas()
 c.agregar_libro("Cien años de soledad", 12.50)
 c.agregar_libro("Rayuela", 18.00)
 

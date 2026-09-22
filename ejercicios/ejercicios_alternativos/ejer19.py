@@ -1,9 +1,9 @@
-"""Clase Bodega que:
+"""Clase Farmacia que:
 (1) tenga método agregar_stock(producto, cantidad) que guarde en un diccionario;
 (2) tenga método retirar_stock(producto, cantidad) que disminuya y retorne True si hay suficiente;
 (3) tenga método productos_bajo_stock(minimo) que retorne una lista de productos con cantidad < minimo."""
 
-class Bodega:
+class Farmacia:
     def __init__(self):
         self.stock = {}
 
@@ -22,7 +22,7 @@ class Bodega:
     def productos_bajo_stock(self, minimo):
         return [producto for producto, cantidad in self.stock.items() if cantidad < minimo]
 
-b = Bodega()
+b = Farmacia()
 b.agregar_stock("harina", 40)
 b.retirar_stock("harina", 25)
 b.productos_bajo_stock(20)

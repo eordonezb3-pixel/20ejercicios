@@ -1,10 +1,10 @@
-"""Clase GestorMascotas que:
+"""Clase RegistroVehiculos que:
 (1) tenga método agregar_mascota(nombre, edad) que guarde en un diccionario;
 (2) tenga método mascotas_mayores(edad_minima) que retorne una lista de nombres
 cuya edad sea ≥;
 (3) tenga método edad_promedio() que retorne el promedio de edades."""
 
-class GestorMascotas:
+class RegistroVehiculos:
 
     def __init__(self):
         self.mascotas = {}
@@ -26,7 +26,7 @@ class GestorMascotas:
         return sum(self.mascotas.values()) / len(self.mascotas)
 
 
-gm = GestorMascotas()
+gm = RegistroVehiculos()
 gm.agregar_mascota("Rocky", 5)
 gm.agregar_mascota("Luna", 1)
 gm.agregar_mascota("Toby", 3)

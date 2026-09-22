@@ -1,11 +1,11 @@
-"""Clase DetectorParidad que:
+"""Clase ClasificadorAsientos que:
 (1) tenga método es_par(numero) que retorne True/False;
 (2) tenga método separar(*numeros) que retorne un diccionario
 {'pares': [...], 'impares': [...]} reutilizando es_par;
 (3) tenga método cantidad_pares_impares() que retorne una tupla
 (cant_pares, cant_impares)."""
 
-class DetectorParidad:
+class ClasificadorAsientos:
 
     def es_par(self, numero):
         if numero % 2 == 0:
@@ -34,7 +34,7 @@ class DetectorParidad:
         return (f"pares: {cant_pares}, impares: {cant_impares}")
 
 
-d = DetectorParidad()
+d = ClasificadorAsientos()
 
 print(d.separar(2, 4, 6, 7, 9, 11, 13, 15, 8, 10, 21, 33))
 

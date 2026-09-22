@@ -1,10 +1,10 @@
-"""Clase Departamentos que: (1) tenga método crear_departamento(nombre_departamento)
+"""Clase SalasDeMuseo que: (1) tenga método crear_departamento(nombre_departamento)
 que inicie un departamento como una lista vacía en un diccionario;
 (2) tenga método agregar_empleado(departamento, empleado) que añada el empleado
 al departamento; (3) tenga método departamento_mayor_integrantes() que retorne
 el nombre del departamento con más empleados."""
 
-class Departamentos:
+class SalasDeMuseo:
 
     def __init__(self):
         self.departamentos = {}
@@ -22,7 +22,7 @@ class Departamentos:
 
         return max(self.departamentos, key=lambda depto: len(self.departamentos[depto]))
 
-d = Departamentos()
+d = SalasDeMuseo()
 d.crear_departamento("Ventas")
 d.crear_departamento("Soporte")
 d.agregar_empleado("Ventas", "Sofía")

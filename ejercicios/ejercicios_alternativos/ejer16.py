@@ -1,9 +1,9 @@
-"""Clase CifradorDesplazamiento que:
+"""Clase CodificadorMensajes que:
 (1) tenga método cifrar_letra(letra, desplazamiento) que retorne la letra desplazada en el alfabeto (usar operador %);
 (2) tenga método cifrar_palabra(palabra, desplazamiento) que reutilice para toda la palabra;
 (3) tenga un diccionario como atributo para historial de cifrados."""
 
-class CifradorDesplazamiento:
+class CodificadorMensajes:
     def __init__(self):
         self.historial = {}
 
@@ -18,7 +18,7 @@ class CifradorDesplazamiento:
         self.historial[palabra] = cifrada
         return cifrada
 
-cd = CifradorDesplazamiento()
+cd = CodificadorMensajes()
 cd.cifrar_palabra("mundo", 5)
 print(f"Palabra cifrada: {cd.cifrar_palabra('mundo', 5)}")
 print(f"Historial de cifrados: {cd.historial}")

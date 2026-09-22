@@ -1,8 +1,8 @@
-"""Clase MezcladorListas que:
+"""Clase MezcladorRutas que:
 (1) tenga método intercalar(lista1, lista2) que retorne una lista alternando elementos de ambas;
 (2) tenga método intercalar_multiples(*listas) que reutilice para varias listas."""
 
-class MezcladorListas:
+class MezcladorRutas:
 
     def intercalar(self, lista1, lista2):
         resultado = []
@@ -25,7 +25,7 @@ class MezcladorListas:
                     resultado.append(lst[i])
         return resultado
 
-ml = MezcladorListas()
+ml = MezcladorRutas()
 ml.intercalar([1, 3], [2, 4])
 print(f"Intercalar dos listas: {ml.intercalar([1, 3], [2, 4])}")
 ml.intercalar_multiples([1, 4], [2, 5], [3, 6])

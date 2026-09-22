@@ -1,9 +1,9 @@
-"""Clase BuscadorPalabras que:
+"""Clase AnalizadorRecetas que:
 (1) tenga método encontrar_palabras(texto, patron) que busque palabras que inicien con el patrón y retorne una lista;
 (2) tenga método agrupar_por_longitud(texto) que retorne un diccionario {longitud: [palabras]};
 (3) tenga método palabras_unicas() usando un conjunto."""
 
-class BuscadorPalabras:
+class AnalizadorRecetas:
     def __init__(self):
         self.palabras = set()
 
@@ -24,7 +24,7 @@ class BuscadorPalabras:
     def palabras_unicas(self):
         return list(self.palabras)
 
-bp = BuscadorPalabras()
+bp = AnalizadorRecetas()
 bp.agrupar_por_longitud("la luna brilla mucho")
 print(f"Agrupadas por longitud: {bp.agrupar_por_longitud('la luna brilla mucho')}")
 print(f"Palabras que inician con 'l': {bp.encontrar_palabras('la luna brilla mucho', 'l')}")
